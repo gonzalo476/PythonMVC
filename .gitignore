@@ -1,0 +1,52 @@
+# Byte-compiled / compiled Python files
+*.py[cod]
+__pycache__/
+*.so
+*.pyd
+
+# Distribuciones / empaquetado
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Entornos virtuales
+env/
+venv/
+.venv/
+pip-wheel-metadata/
+
+# Configuración local / entornos
+.env
+.venv
+*.local_settings
+
+# Archivos de logs
+*.log
+logs/
+
+# Archivos temporales
+*.tmp
+*.bak
+*.swp
+*~
+
+# Archivos de sistema (macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# Configuración de IDEs (PyCharm, VSCode, etc.)
+.idea/
+.vscode/
+*.code-workspace
+
+# Cobertura de tests (ejemplo coverage.py)
+.htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+.nox
+
+# Otros
+__pycache__/

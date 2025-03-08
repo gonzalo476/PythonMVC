@@ -1,46 +1,47 @@
-# Byte-compiled / compiled Python files
+# ---- Python ----
+# Python compiled files
 *.py[cod]
 __pycache__/
 *.so
 *.pyd
 
-# Distribuciones / empaquetado
+# Distribution / packaging
 build/
 dist/
 *.egg-info/
 .eggs/
+pip-wheel-metadata/
 
-# Entornos virtuales
+# Virtual environments
 env/
 venv/
 .venv/
-pip-wheel-metadata/
+# If your virtual environment has a different name, replace it here
 
-# Configuración local / entornos
+# Local configuration / environment variables
 .env
 .venv
 *.local_settings
 
-# Archivos de logs
-*.log
-logs/
-
-# Archivos temporales
+# Temporary files
 *.tmp
 *.bak
 *.swp
 *~
+*.log
+logs/
 
-# Archivos de sistema (macOS, Windows)
-.DS_Store
-Thumbs.db
-
-# Configuración de IDEs (PyCharm, VSCode, etc.)
+# ---- PyCharm / IDEs ----
 .idea/
+# If you prefer to version certain configuration files (e.g., run configurations),
+# you could selectively uncomment some files inside .idea/
+# Example: !.idea/runConfigurations
+
+# Other editors / IDEs
 .vscode/
 *.code-workspace
 
-# Cobertura de tests (ejemplo coverage.py)
+# ---- Test coverage (coverage, tox, etc.) ----
 .htmlcov/
 .tox/
 .coverage
@@ -48,5 +49,6 @@ Thumbs.db
 .cache
 .nox
 
-# Otros
-__pycache__/
+# ---- System files ----
+.DS_Store
+Thumbs.db

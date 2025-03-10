@@ -1,12 +1,26 @@
 import sys
 from PySide2.QtWidgets import QApplication
-from controllers.main_controller import MainController
+from app.models.user_model import User
+from app.views.user_view import UserView
+from app.controllers.user_controller import UserController
+from app.db.database import Database
 
-if __name__ == "__main__":
+
+def main():
+    # Create the application
     app = QApplication(sys.argv)
 
-    # Create main controller
-    controller = MainController()
-    controller.start()
+    # Set up the MVC components
+    db = Database()
+    view = UserView()
+    controller = UserController(db, view)
 
+    # Show the view
+    view.show()
+
+    # Run the application
     sys.exit(app.exec_())
+
+
+if __name__ == "__main__":
+    main()
